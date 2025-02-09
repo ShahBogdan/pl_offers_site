@@ -1,18 +1,18 @@
-'use client'
-import { useState } from 'react'
-import { Dialog, DialogPanel } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+// 'use client'
+// import { useState } from 'react'
+// import { Dialog, DialogPanel } from '@headlessui/react'
+// import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from 'next/image'
 
-const navigation = [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
-]
+// const navigation = [
+//     { name: 'Product', href: '#' },
+//     { name: 'Features', href: '#' },
+//     { name: 'Marketplace', href: '#' },
+//     { name: 'Company', href: '#' },
+// ]
 
 export default function Example() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    // const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     return (
         <header className="bg-white">
             <div className="mx-auto flex max-w-7xl items-center justify-between p-6 ">

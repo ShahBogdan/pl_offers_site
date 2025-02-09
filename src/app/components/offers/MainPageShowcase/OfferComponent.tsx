@@ -2,7 +2,7 @@ import { Offer } from "@/types/offer";
 import { CogIcon, RocketLaunchIcon, UserCircleIcon, FireIcon } from '@heroicons/react/24/solid'
 import { FC } from "react";
 import MainBtn from "../../MainBtn";
-
+import Image from "next/image";
 interface ItemProps {
     Icon: React.ComponentType<React.ComponentProps<'svg'>>;
     label: string;
@@ -21,7 +21,7 @@ const Item: FC<ItemProps> = ({ Icon, label, text }) => {
     );
 };
 
-export default function (offer: Offer) {
+export default function OfferComponent(offer: Offer) {
     return (
         <div className="bg-white p-4 rounded-lg shadow relative text-black">
             {/* TODO fix src */}
@@ -29,7 +29,15 @@ export default function (offer: Offer) {
                 <FireIcon className=" w-5 h-5" />
                 <span>Pierwsza za darmo</span>
             </div>}
-            <img className=" w-full h-16 object-contain" src={"https://arb-api.website/" + offer.image} />
+            <div className=" mt-3">
+                <Image
+                    src={"https://arb-api.website" + offer.image}
+                    style={{ objectFit: "contain", margin: "auto" }}
+                    alt="Picture of the author"
+                    width={150}
+                    height={100}
+                />
+            </div>
             <p className=" my-5 border text-center border-dashed border-gray-500 ">{offer.offer_advantage}</p>
             <div className="flex flex-col">
                 <Item Icon={CogIcon} label="Pierwsza" text={`do ${offer.first_amount} zl`} />

@@ -2,7 +2,7 @@ const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 interface GetDataParams {
     endpoint: string;
-    query?: Record<string, any>; // Query-параметры (например, ?limit=10)
+    query?: Record<string, string>; // Query-параметры (например, ?limit=10)
     headers?: Record<string, string>; // Дополнительные заголовки
 }
 

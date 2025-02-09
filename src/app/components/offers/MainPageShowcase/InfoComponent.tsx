@@ -1,6 +1,5 @@
 import { Offer } from "@/types/offer";
-import { CogIcon, RocketLaunchIcon, UserCircleIcon, FireIcon } from '@heroicons/react/24/solid'
-import MainBtn from "../../MainBtn";
+
 
 const DetailsItem = ({ label, text }: { label: string, text: string }) => {
     return (
@@ -24,7 +23,7 @@ const LicenseItem = ({ label, text }: { label: string, text: string }) => {
 };
 
 
-export default (offer: Offer) => {
+export default function InfoComponent(offer: Offer) {
     return (
         <div
             className="mt-5 p-5 border border-gray-200 rounded-md bg-gray-5 bg-white text-black"

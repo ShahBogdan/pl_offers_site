@@ -2,7 +2,7 @@ import { getOffers } from "@/lib/offers/get";
 import { Offer } from "@/types/offer";
 import OfferComponent from "./OfferComponent";
 import InfoComponent from "./InfoComponent";
-export default async function () {
+export default async function Index() {
     const offersList: Offer[] = await getOffers();
     return (
         <>
