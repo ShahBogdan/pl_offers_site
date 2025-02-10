@@ -23,13 +23,13 @@ const Item: FC<ItemProps> = ({ Icon, label, text }) => {
 
 export default function OfferComponent(offer: Offer) {
     return (
-        <div className="bg-white p-4 rounded-lg shadow relative text-black">
+        <div className="bg-white p-1 md:p-4 rounded-lg shadow relative text-black">
             {/* TODO fix src */}
-            {offer.zero_first && <div className=" absolute top-0 left-0 bg-orange-600 text-white px-2 py-1 rounded-full text-sm inline-flex">
+            {offer.zero_first && <div className=" absolute top-0 left-0 bg-orange-600 text-white px-2 py-1 rounded-full text-sm inline-flex gap-1">
                 <FireIcon className=" w-5 h-5" />
                 <span>Pierwsza za darmo</span>
             </div>}
-            <div className=" mt-3 h-10 w-auto mx-auto">
+            <div className=" mt-8 md:mt-2 h-10 w-auto mx-auto">
                 <Image
                     src={"https://arb-api.website" + offer.image}
                     style={{ objectFit: "contain", margin: "auto", maxHeight: "100px" }}

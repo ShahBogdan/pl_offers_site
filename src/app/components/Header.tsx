@@ -19,7 +19,7 @@ export default function Example() {
                 <a href="#" className="-m-1.5 p-1.5">
                     <Image src="/Logo.svg" alt="FinRank.pl" width={120} height={40} />
                 </a>
-                <span className=' text-xl text-gray-800'><span className=' text-gray-500 font-thin'>wydanych dzisiaj</span>: 2195</span>
+                <span className=' text-xl text-gray-800'><span className=' text-gray-500 text-sm md:text-base font-thin'>wydanych dzisiaj</span>: 2195</span>
             </div>
             {/* <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 ">
                 <a href="#" className="-m-1.5 p-1.5">

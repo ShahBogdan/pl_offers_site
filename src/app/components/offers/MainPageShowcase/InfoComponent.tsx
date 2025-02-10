@@ -1,5 +1,5 @@
 import { Offer } from "@/types/offer";
-
+import MainBtn from "../../MainBtn";
 
 const DetailsItem = ({ label, text }: { label: string, text: string }) => {
     return (
@@ -72,8 +72,11 @@ export default function InfoComponent(offer: Offer) {
                     <LicenseItem label={"E-mail:"} text={offer.email} />
                     <LicenseItem label={"Adres:"} text={offer.address} />
                     <LicenseItem label={"Telefon:"} text={offer.phone} />
+                    <MainBtn href={offer.offer_url} text="Weź pożyczkę" />
                 </div>
+
             </div>
+
 
         </div>
     );
