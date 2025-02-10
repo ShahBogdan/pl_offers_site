@@ -1,8 +1,9 @@
 'use client'
 import { BanknotesIcon } from '@heroicons/react/20/solid'
-
+import { sendGAEvent } from '@next/third-parties/google'
 function handleClick(href: string) {
-    window.open(href, '_blank')
+    window.open(href, '_blank');
+    sendGAEvent('event', 'offerClicked')
 }
 
 export default function MainBtn({ text, href }: { text: string, href: string }) {
