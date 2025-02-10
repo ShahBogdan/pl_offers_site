@@ -1,4 +1,10 @@
 import MainPageShowcase from "./components/offers/MainPageShowcase";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: 'Szybka Pożyczka',
+  description: 'Pożyczka Online 2025',
+}
+
 export default function Home() {
   return (
     <div className="  flex flex-col gap-4">
