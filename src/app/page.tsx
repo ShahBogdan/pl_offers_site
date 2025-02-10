@@ -3,8 +3,8 @@ export default function Home() {
   return (
     <div className="  flex flex-col gap-4">
       <div className="container my-5 mx-auto">
-        <h1 className="text-2xl md:text-4xl font-bold text-gray-600">Szybka<span className=" mx-2 text-indigo-600">Pożyczka Online</span>2025</h1>
-        <p className=" text-xl text-gray-700">Złożenie kilku wniosków zwiększa Twoją szansę na otrzymanie pożyczki</p>
+        <h1 className="text-2xl md:text-4x px-3 md:px-0 font-bold text-gray-600">Szybka<span className=" mx-2 text-indigo-600">Pożyczka Online</span>2025</h1>
+        <p className="px-3 md:px-0 text-xl text-gray-700">Złożenie kilku wniosków zwiększa Twoją szansę na otrzymanie pożyczki</p>
         <MainPageShowcase />
         <div className=" mt-5 text-gray-700 border border-gray-200 p-5 rounded-md bg-gray-50">
           <h3 className=" text-xl my-3">Wymagania dla pożyczkobiorców:</h3>

@@ -29,10 +29,10 @@ export default function OfferComponent(offer: Offer) {
                 <FireIcon className=" w-5 h-5" />
                 <span>Pierwsza za darmo</span>
             </div>}
-            <div className=" mt-3">
+            <div className=" mt-3 h-10 w-auto mx-auto">
                 <Image
                     src={"https://arb-api.website" + offer.image}
-                    style={{ objectFit: "contain", margin: "auto" }}
+                    style={{ objectFit: "contain", margin: "auto", maxHeight: "100px" }}
                     alt="Picture of the author"
                     width={150}
                     height={100}
@@ -40,9 +40,9 @@ export default function OfferComponent(offer: Offer) {
             </div>
             <p className=" my-5 border text-center border-dashed border-gray-500 ">{offer.offer_advantage}</p>
             <div className="flex flex-col">
-                <Item Icon={CogIcon} label="Pierwsza" text={`do ${offer.first_amount} zl`} />
-                <Item Icon={RocketLaunchIcon} label="Kwota" text={`do ${offer.second_amount} zl`} />
-                <Item Icon={UserCircleIcon} label="Wiek" text={`18-${offer.age} lat`} />
+                <Item Icon={CogIcon} label="Pierwsza" text={` ${offer.first_amount} zl`} />
+                <Item Icon={RocketLaunchIcon} label="Kwota" text={`${offer.second_amount} zl`} />
+                <Item Icon={UserCircleIcon} label="Wiek" text={`18-${offer.age}`} />
             </div>
             <MainBtn text="Weź pożyczkę" href={offer.offer_url} />
         </div>
